@@ -11,7 +11,7 @@
   padding: 10px;
 }
 .first p{
-  display: inline;
+  display: block;
 }
 #grow {
   width: 500px;
@@ -53,7 +53,7 @@
 #shrink div {
   flex-grow:1 ;
   flex-shrink:4;
-  flex-basis: 100px;
+  flex-basis: 50px;
 }
 
 #shrink div:nth-of-type(1){
@@ -67,7 +67,8 @@
 
 .container {
   display: flex;
-  flex-flow: flow;
+  flex-wrap:wrap;
+  align-content:left;
   background-color: DodgerBlue;
 }
 
